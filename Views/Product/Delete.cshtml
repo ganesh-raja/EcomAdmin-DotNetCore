@@ -1,0 +1,48 @@
+﻿@{
+    ViewData["Title"] = "Delete Product";
+}
+@model Product
+<div class="container mt-5 border border-1 rounded" style="max-width: 60%">
+    <div class="row mb-3">
+        <h3 class="text-center my-3">Delete Category</h3>
+    </div>
+    <form method="post" enctype="multipart/form-data">
+        @Html.AntiForgeryToken()
+        <div class="row mx-3">
+            <div class="col">
+                <div class="row mb-2">
+                    <span><strong>Category ID</strong><p class="text-info"><b>@Model.CategoryId</b></p></span>                    
+                </div>
+                <div class="row mb-2">
+                    <span><strong>Product ID</strong><p class="text-info"><b>@Model.ProductId</b></p></span>
+                    <input asp-for="@Model.ProductId" hidden />
+                </div>
+                <div class="row mb-2">
+                    <span><strong>Product Name</strong><p class="text-info"><b>@Model.Name</b></p></span>
+                </div>
+                <div class="row mb-2">
+                    <span><strong>Price in Rs.</strong><p class="text-info"><b>@Model.Price</b></p></span>
+                </div>
+                <div class="row mb-2">
+                    <span><strong>Quantity</strong><p class="text-info"><b>@Model.Quantity</b></p></span>
+                </div>                
+                <div class="row mb-4">
+                    <div class="col">
+                        <a asp-action="Index" asp-controller="Product" class="btn btn-outline-secondary form-control">Back</a>
+                    </div>
+                    <div class="col">
+                        <button type="submit" class="btn btn-outline-danger form-control">Delete</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col my-3">
+                <div class="mb-4">
+                    <img src="@Model.ImageUrl" width="200px" height="150px" />
+                </div>
+                <div class="mb-4">
+                    <span><strong>Description</strong><p class="text-info"><b>@Model.Description</b></p></span>
+                </div>
+            </div>
+    </form>
+</div>
+</div>

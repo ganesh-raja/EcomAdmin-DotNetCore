@@ -1,0 +1,66 @@
+﻿@{
+    ViewData["Title"] = "All Categories";
+}
+@model List<Category>
+<div class="container">
+    <div class="row">
+        <div class="col-12 d-flex justify-content-end">
+            <a class="btn btn-primary" data-toggle="tooltip" title="Add Category" asp-action="Index" asp-controller="Category"><i class="bi bi-plus-circle"></i></a>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row text-center my-3">
+        <h3>All Categories</h3>
+    </div>
+    @if(Model.Count > 0)
+    {
+        <table id="table1" class="table table-bordered table-striped">
+            <thead>
+                <tr>
+                    <th class="text-center">Category ID</th>
+                    <th class="text-center">Category Name</th>
+                    <th class="text-center">Image</th>
+                    <th class="text-center">Enable Site</th>
+                    <th class="text-center">Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var cat in Model)
+                {
+                    <tr class="text-center">
+                        <td class="text-center" width="20%">@cat.CategoryId</td>
+                        <td width="20%">@cat.Name</td>
+                        <td width="20%">
+                            <img src="@cat.ImageUrl" width="50px" height="40px" />
+                        </td>
+                        <td width="20%">@(cat.IsActive ? "Yes" : "No")</td>
+                        <td width="20%">
+                            <div class="btn-group">
+                                <a asp-action="Edit" asp-controller="Category" asp-route-id="@cat.CategoryId"
+                                   class="btn btn-warning" data-toggle="tooltip" title="Edit"><i class="bi bi-pencil-square"></i></a>
+                                <a asp-action="Delete" asp-controller="Category" asp-route-id="@cat.CategoryId"
+                                   class="btn btn-danger" data-toggle="tooltip" title="Delete"><i class="bi bi-trash"></i></a>
+                            </div>                            
+                        </td>
+                    </tr>
+                    
+                }
+            </tbody>
+        </table>
+    }
+    else
+    {
+        <div class="row">
+            <div class="col py-4 text-danger text-center border border-1">
+                <h4 >No Record Found.</h4>
+            </div>            
+        </div>
+    }
+
+</div>
+@section Scripts{
+    <script type="text/javascript">        
+        $('#table1').DataTable();        
+    </script>
+}

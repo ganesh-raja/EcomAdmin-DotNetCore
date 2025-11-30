@@ -1,0 +1,68 @@
+﻿@{
+    ViewData["Title"] = "Edit Admin User";
+}
+@model Login
+<div class="container mt-5" style="max-width: 50%">
+    <form method="post">
+        @Html.AntiForgeryToken()
+        <div class="row text-center mb-3">
+            <h5>Edit Admin User</h5>
+        </div>
+        <div class="row mb-2">
+            <div class="col">
+                <label asp-for="uname" class="form-label text-start"></label>
+            </div>
+            <div class="col">
+                <input asp-for="uname" id="uname" type="text" class="form-control" />
+                <span asp-validation-for="uname" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="row mb-2">
+            <div class="col">
+                <label asp-for="pass" class="form-label text-start"></label>                
+            </div>
+            <div class="col">
+                <input asp-for="pass" id="pass" type="text" class="form-control" />
+                <span asp-validation-for="pass" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <label asp-for="access" class="form-label me-5">Is Enabled</label>
+            </div>
+            <div class="col">
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input"
+                           type="radio"
+                           asp-for="access"
+                           value="true"
+                           id="IsActiveYes" />
+                    <label class="form-check-label" for="IsActiveYes">YES</label>
+                </div>
+
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input"
+                           type="radio"
+                           asp-for="access"
+                           value="false"
+                           id="IsActiveNo" />
+                    <label class="form-check-label" for="IsActiveNo">NO</label>
+                </div>
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col"></div>
+            <div class="col">
+                <span asp-validation-for="access" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="row mb-2">
+            <div class="col">
+                <a asp-action="Index" asp-controller="Admin" class="btn btn-outline-secondary form-control">Back</a>
+            </div>
+            <div class="col">
+                <button type="submit" class="btn btn-outline-warning form-control">Update</button>
+            </div>
+        </div>
+    </form>
+</div>

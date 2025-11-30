@@ -1,0 +1,62 @@
+﻿@{
+    ViewData["Title"] = "Edit Category";
+}
+@model Category
+<div class="container mt-5" style="max-width: 70%">
+    <div class="row border border-1 rounded">
+        <h3 class="text-center my-4">Edit Category</h3>
+        <div class="col">
+            <div class="container">
+                <div class="row">
+                    <form method="post" enctype="multipart/form-data">                       
+                        @Html.AntiForgeryToken()
+                        <div class="mb-3">
+                            <label asp-for="Name" class="form-label">Category Name</label>
+                            <input asp-for="Name" id="uname" type="text" class="form-control" />
+                            <input asp-for="CategoryId" hidden />
+                            <span asp-validation-for="Name" class="text-danger"></span>
+                        </div>
+
+                        <div class="mb-3">
+                            <label asp-for="ImageUrl" class="form-label">Image</label>
+                            <input name="files" id="files" type="file" class="form-control" />
+                            @* <span asp-validation-for="@Model.ImageUrl" class="text-danger"></span> *@
+                        </div>
+
+                        <div class="mb-3">
+                            <label asp-for="IsActive" class="form-label me-5">Is Enable</label>
+
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" asp-for="IsActive" value="true" id="IsActiveYes">
+                                <label class="form-check-label" for="IsActiveYes">YES</label>
+                            </div>
+
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" asp-for="IsActive" value="false" id="IsActiveNo">
+                                <label class="form-check-label" for="IsActiveNo">NO</label>
+                            </div>
+
+                            <span asp-validation-for="IsActive" class="text-danger"></span>
+                        </div>
+
+                        <div class="row mb-4">
+                            <div class="col-6">
+                                <a asp-action="AllCategory" asp-controller="Category" class="btn btn-outline-secondary form-control">Back</a>
+                            </div>
+                            <div class="col-6">
+                                <button type="submit" class="btn btn-outline-warning form-control">Update</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>        
+        <div class="col text-center my-3">
+            <img src="@Model.ImageUrl" width="200px" height="150px" />
+        </div>
+    </div>
+</div>
+@section Scripts
+{
+    <partial name="_ValidationScriptsPartial" />
+}

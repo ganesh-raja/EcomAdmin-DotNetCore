@@ -1,0 +1,125 @@
+﻿@{
+    ViewData["Title"] = "Admin Users";
+}
+@model EcomAdmin.ViewModel.AdminViewModel
+<div class="container">
+    <div class="container my-4" style="max-width: 50%">
+        <form method="post">
+            @Html.AntiForgeryToken()
+            <div class="row text-center mb-3">
+                <h5>Add Admin User</h5>
+            </div>
+            <div class="row mb-2">
+                <div class="col">
+                    <label asp-for="NewAdmin.uname" class="form-label text-start"></label> 
+                </div>
+                <div class="col">
+                    <input asp-for="NewAdmin.uname" id="uname" type="text" class="form-control" />   
+                    <span asp-validation-for="NewAdmin.uname" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="row mb-2">
+                <div class="col">
+                    <label asp-for="NewAdmin.pass" class="form-label text-start"></label>
+                </div>
+                <div class="col">
+                    <input asp-for="NewAdmin.pass" id="pass" type="password" class="form-control" />
+                    <span asp-validation-for="NewAdmin.pass" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label asp-for="NewAdmin.access" class="form-label me-5">Is Enabled</label>
+                </div>
+                <div class="col">
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input"
+                               type="radio"
+                               asp-for="NewAdmin.access"
+                               value="true"
+                               id="IsActiveYes" />
+                        <label class="form-check-label" for="IsActiveYes">YES</label>
+                    </div>
+
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input"
+                               type="radio"
+                               asp-for="NewAdmin.access"
+                               value="false"
+                               id="IsActiveNo" />
+                        <label class="form-check-label" for="IsActiveNo">NO</label>
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="col"></div>
+                <div class="col">
+                    <span asp-validation-for="NewAdmin.access" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="row mb-2">
+                <div class="col">
+                    <input type="reset" class="btn btn-outline-secondary form-control"/>
+                </div>
+                <div class="col">
+                    <button type="submit" class="btn btn-outline-success form-control">Add</button>
+                </div>                
+            </div>
+        </form>
+    </div>
+    <div class="container" style="max-width: 80%">        
+        <table class="table table-bordered table-striped">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Username</th>
+                    @* <th>Password</th> *@
+                    <th>Access</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                @if (Model.AdminList.Count > 0 )
+                {
+                    @foreach (var item in Model.AdminList)
+                    {
+                        <tr>
+                            <td>@item.id</td>
+                            <td>@item.uname</td>
+                            @* <td>@item.pass</td> *@
+                            <td>@item.access</td>
+                            <td>
+                                <div class="btn-group">
+                                    <a asp-action="Edit" asp-controller="Admin" asp-route-id="@item.id"
+                                       class="btn btn-warning" data-toggle="tooltip" title="Edit"><i class="bi bi-pencil-square"></i></a>
+                                    <a asp-action="Delete" asp-controller="Admin" asp-route-id="@item.id"
+                                       class="btn btn-danger" data-toggle="tooltip" title="Delete"
+                                       onclick="return confirm('Are you sure you want to delete this admin user?');"><i class="bi bi-trash"></i></a>
+                                </div>
+                            </td>
+                        </tr>
+                    }
+                }
+                else
+                {
+                    <tr>
+                        <td colspan="4">
+                            <h4 class="text-danger text-center">No Admin user data.</h4>
+                        </td>                        
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<style>
+    th,td{
+        text-align: center;
+    }
+</style>
+
+@section Scripts{
+    <partial name="_ValidationScriptsPartial" />
+}
+

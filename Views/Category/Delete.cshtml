@@ -1,0 +1,37 @@
+﻿@{
+    ViewData["Title"] = "Delete Category";
+}
+@model Category
+<div class="container mt-5 border border-1 rounded" style="max-width: 60%">
+    <div class="row mb-3">
+        <h3 class="text-center my-3">Delete Category</h3>        
+    </div> 
+    <form method="post" enctype="multipart/form-data">
+        @Html.AntiForgeryToken()
+        <div class="row mx-3">        
+            <div class="col">
+                <div class="row mb-2">
+                    <span><strong>Category ID</strong><p class="text-info"><b>@Model.CategoryId</b></p></span>
+                    <input asp-for="@Model.CategoryId" hidden />
+                </div>
+                <div class="row mb-2">
+                    <span><strong>Category Name</strong><p class="text-info"><b>@Model.Name</b></p></span>                
+                </div>
+                <div class="row mb-2">
+                    <span><strong>Enable Site</strong><p class="text-info"><b>@(Model.IsActive ? "Yes" : "No")</b></p></span>                
+                </div>
+                <div class="row mb-4">
+                    <div class="col">
+                        <a asp-action="AllCategory" asp-controller="Category" class="btn btn-outline-secondary form-control">Back</a>
+                    </div>
+                    <div class="col">
+                        <button type="submit" class="btn btn-outline-danger form-control">Delete</button>
+                    </div>
+                </div>
+            </div>
+        <div class="col text-center my-3">
+            <img src="@Model.ImageUrl" width="200px" height="150px"/>
+        </div>
+    </form>
+    </div>
+</div>

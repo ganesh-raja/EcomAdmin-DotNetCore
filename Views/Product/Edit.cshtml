@@ -1,0 +1,77 @@
+﻿@{
+    ViewData["Title"] = "Edit Product";
+}
+@model EcomAdmin.ViewModel.ProductViewModel
+<div class="container mt-5" style="max-width: 70%">
+    <div class="row border border-1 rounded">
+        <h3 class="text-center my-4">Edit Category</h3>
+        <div class="col">
+            <div class="container">
+                <div class="row">
+                    <form method="post" enctype="multipart/form-data">
+                        @Html.AntiForgeryToken()
+                        <div class="mb-2">
+                            <label asp-for="Product.CategoryId" class="form-label">Category Type</label>
+                            <div class="d-flex align-items-center gap-3">
+                                <select asp-for="Product.CategoryId" asp-items="Model.CategoryList" class="form-select">
+                                    <option value="">Select Category</option>
+                                </select>
+                                <a asp-action="Index" asp-controller="Category" class="btn btn-primary btn-sm"
+                                   data-toggle="tooltip" title="Add Category"><i class="bi bi-plus-circle"></i></a>
+                                <i class="bi bi-info-circle" data-toggle="tooltip" title="Category type not listed? Click to add a new one."></i>
+                            </div>
+                            <span asp-validation-for="Product.CategoryId" class="text-danger"></span>
+                        </div>
+
+                        <div class="mb-2">
+                            <label asp-for="Product.Name" class="form-label">Product Name</label>
+                            <input asp-for="Product.Name" id="uname" type="text" class="form-control" />
+                            <span asp-validation-for="Product.Name" class="text-danger"></span>
+                            <input asp-for="Product.ProductId" hidden />
+                        </div>
+
+                        <div class="mb-2">
+                            <label asp-for="Product.Price" class="form-label">Price in Rs.</label>
+                            <input asp-for="Product.Price" id="price" type="text" class="form-control" />
+                            <span asp-validation-for="Product.Price" class="text-danger"></span>
+                        </div>
+
+                        <div class="mb-2">
+                            <label asp-for="Product.Quantity" class="form-label">Quantity</label>
+                            <input asp-for="Product.Quantity" id="qty" type="text" class="form-control" />
+                            <span asp-validation-for="Product.Quantity" class="text-danger"></span>
+                        </div>
+
+                        <div class="mb-2">
+                            <label asp-for="Product.ImageUrl" class="form-label">Image</label>
+                            <input name="files" id="files" type="file" class="form-control" />
+                            @* <span asp-validation-for="@Model.ImageUrl" class="text-danger"></span> *@
+                        </div>
+
+                        <div class="mb-2">
+                            <label asp-for="Product.Description" class="form-label">Description</label>
+                            <textarea asp-for="Product.Description" id="description" rows="3" class="form-control"></textarea>
+                            @* <span asp-validation-for="Description" class="text-danger"></span> *@
+                        </div>
+
+                        <div class="row mb-4">
+                            <div class="col-6">
+                                <a asp-action="Index" asp-controller="Product" class="btn btn-outline-secondary form-control">Back</a>
+                            </div>
+                            <div class="col-6">
+                                <button type="submit" class="btn btn-outline-warning form-control">Update</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>        
+        <div class="col text-center my-3">
+            <img src="@Model.Product.ImageUrl" width="200px" height="150px" />
+        </div> 
+    </div>
+</div>
+@section Scripts
+{
+    <partial name="_ValidationScriptsPartial" />
+}
