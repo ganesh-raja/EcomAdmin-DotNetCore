@@ -144,7 +144,7 @@ namespace EcomAdmin.Controllers
                     if (uploadedFiles.Count > 0)
                     {
                         var existingProduct = _dbContext.Products.AsNoTracking()
-                            .FirstOrDefault(x => x.CategoryId == product.CategoryId);
+                            .FirstOrDefault(x => x.ProductId == product.ProductId);
 
                         if (existingProduct.ImageUrl != null)
                         {
@@ -170,7 +170,7 @@ namespace EcomAdmin.Controllers
                     if (product.ImageUrl == null)
                     {
                         var oldCategory = _dbContext.Products.AsNoTracking()
-                        .FirstOrDefault(x => x.CategoryId == product.CategoryId);
+                        .FirstOrDefault(x => x.ProductId == product.ProductId);
                         product.ImageUrl = oldCategory.ImageUrl;
                     }
 

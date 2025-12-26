@@ -1,12 +1,152 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\raana\\Downloads\\Ganesh\\ganesh-git\\EcomAdmin\\",
-  "Documents": [],
+  "WorkspaceRootPath": "C:\\Users\\raana\\Downloads\\Ganesh\\ganesh-git\\EcomAdmin-DotNetCore\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{EADA5DA0-FCCF-453F-B4BA-7ADAE6B4BBCD}|EcomAdmin.csproj|c:\\users\\raana\\downloads\\ganesh\\ganesh-git\\ecomadmin-dotnetcore\\migrations\\20251226052136_initialmigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EADA5DA0-FCCF-453F-B4BA-7ADAE6B4BBCD}|EcomAdmin.csproj|solutionrelative:migrations\\20251226052136_initialmigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EADA5DA0-FCCF-453F-B4BA-7ADAE6B4BBCD}|EcomAdmin.csproj|c:\\users\\raana\\downloads\\ganesh\\ganesh-git\\ecomadmin-dotnetcore\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{EADA5DA0-FCCF-453F-B4BA-7ADAE6B4BBCD}|EcomAdmin.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\raana\\Downloads\\Ganesh\\ganesh-git\\EcomAdmin-DotNetCore\\EcomAdmin.csproj.user||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:EcomAdmin.csproj.user||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EADA5DA0-FCCF-453F-B4BA-7ADAE6B4BBCD}|EcomAdmin.csproj|c:\\users\\raana\\downloads\\ganesh\\ganesh-git\\ecomadmin-dotnetcore\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EADA5DA0-FCCF-453F-B4BA-7ADAE6B4BBCD}|EcomAdmin.csproj|solutionrelative:models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EADA5DA0-FCCF-453F-B4BA-7ADAE6B4BBCD}|EcomAdmin.csproj|c:\\users\\raana\\downloads\\ganesh\\ganesh-git\\ecomadmin-dotnetcore\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EADA5DA0-FCCF-453F-B4BA-7ADAE6B4BBCD}|EcomAdmin.csproj|solutionrelative:controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EADA5DA0-FCCF-453F-B4BA-7ADAE6B4BBCD}|EcomAdmin.csproj|c:\\users\\raana\\downloads\\ganesh\\ganesh-git\\ecomadmin-dotnetcore\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EADA5DA0-FCCF-453F-B4BA-7ADAE6B4BBCD}|EcomAdmin.csproj|solutionrelative:controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EADA5DA0-FCCF-453F-B4BA-7ADAE6B4BBCD}|EcomAdmin.csproj|c:\\users\\raana\\downloads\\ganesh\\ganesh-git\\ecomadmin-dotnetcore\\models\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EADA5DA0-FCCF-453F-B4BA-7ADAE6B4BBCD}|EcomAdmin.csproj|solutionrelative:models\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EADA5DA0-FCCF-453F-B4BA-7ADAE6B4BBCD}|EcomAdmin.csproj|c:\\users\\raana\\downloads\\ganesh\\ganesh-git\\ecomadmin-dotnetcore\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EADA5DA0-FCCF-453F-B4BA-7ADAE6B4BBCD}|EcomAdmin.csproj|solutionrelative:models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "20251226052136_InitialMigration.cs",
+              "DocumentMoniker": "C:\\Users\\raana\\Downloads\\Ganesh\\ganesh-git\\EcomAdmin-DotNetCore\\Migrations\\20251226052136_InitialMigration.cs",
+              "RelativeDocumentMoniker": "Migrations\\20251226052136_InitialMigration.cs",
+              "ToolTip": "C:\\Users\\raana\\Downloads\\Ganesh\\ganesh-git\\EcomAdmin-DotNetCore\\Migrations\\20251226052136_InitialMigration.cs",
+              "RelativeToolTip": "Migrations\\20251226052136_InitialMigration.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-26T05:21:36.415Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "EcomAdmin.csproj.user",
+              "DocumentMoniker": "C:\\Users\\raana\\Downloads\\Ganesh\\ganesh-git\\EcomAdmin-DotNetCore\\EcomAdmin.csproj.user",
+              "RelativeDocumentMoniker": "EcomAdmin.csproj.user",
+              "ToolTip": "C:\\Users\\raana\\Downloads\\Ganesh\\ganesh-git\\EcomAdmin-DotNetCore\\EcomAdmin.csproj.user",
+              "RelativeToolTip": "EcomAdmin.csproj.user",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003464|",
+              "WhenOpened": "2025-12-26T05:15:15.329Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CategoryController.cs",
+              "DocumentMoniker": "C:\\Users\\raana\\Downloads\\Ganesh\\ganesh-git\\EcomAdmin-DotNetCore\\Controllers\\CategoryController.cs",
+              "RelativeDocumentMoniker": "Controllers\\CategoryController.cs",
+              "ToolTip": "C:\\Users\\raana\\Downloads\\Ganesh\\ganesh-git\\EcomAdmin-DotNetCore\\Controllers\\CategoryController.cs",
+              "RelativeToolTip": "Controllers\\CategoryController.cs",
+              "ViewState": "AgIAAGIAAAAAAAAAAAAswAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-26T04:54:14.588Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ProductController.cs",
+              "DocumentMoniker": "C:\\Users\\raana\\Downloads\\Ganesh\\ganesh-git\\EcomAdmin-DotNetCore\\Controllers\\ProductController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ProductController.cs",
+              "ToolTip": "C:\\Users\\raana\\Downloads\\Ganesh\\ganesh-git\\EcomAdmin-DotNetCore\\Controllers\\ProductController.cs",
+              "RelativeToolTip": "Controllers\\ProductController.cs",
+              "ViewState": "AgIAAHEAAAAAAAAAAAAmwKYAAABQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-26T04:49:42.262Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Category.cs",
+              "DocumentMoniker": "C:\\Users\\raana\\Downloads\\Ganesh\\ganesh-git\\EcomAdmin-DotNetCore\\Models\\Category.cs",
+              "RelativeDocumentMoniker": "Models\\Category.cs",
+              "ToolTip": "C:\\Users\\raana\\Downloads\\Ganesh\\ganesh-git\\EcomAdmin-DotNetCore\\Models\\Category.cs",
+              "RelativeToolTip": "Models\\Category.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAwAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-26T04:41:56.288Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Login.cs",
+              "DocumentMoniker": "C:\\Users\\raana\\Downloads\\Ganesh\\ganesh-git\\EcomAdmin-DotNetCore\\Models\\Login.cs",
+              "RelativeDocumentMoniker": "Models\\Login.cs",
+              "ToolTip": "C:\\Users\\raana\\Downloads\\Ganesh\\ganesh-git\\EcomAdmin-DotNetCore\\Models\\Login.cs",
+              "RelativeToolTip": "Models\\Login.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAA4wBEAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-26T04:39:25.129Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Product.cs",
+              "DocumentMoniker": "C:\\Users\\raana\\Downloads\\Ganesh\\ganesh-git\\EcomAdmin-DotNetCore\\Models\\Product.cs",
+              "RelativeDocumentMoniker": "Models\\Product.cs",
+              "ToolTip": "C:\\Users\\raana\\Downloads\\Ganesh\\ganesh-git\\EcomAdmin-DotNetCore\\Models\\Product.cs",
+              "RelativeToolTip": "Models\\Product.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-26T04:35:39.817Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\raana\\Downloads\\Ganesh\\ganesh-git\\EcomAdmin-DotNetCore\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\raana\\Downloads\\Ganesh\\ganesh-git\\EcomAdmin-DotNetCore\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-12-26T04:34:35.768Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }

@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace EcomAdmin.Models
 {
@@ -7,7 +8,9 @@ namespace EcomAdmin.Models
         [Key]
         public int CategoryId { get; set; }
         [Required]
-        public string Name { get; set; }
+        [Column(TypeName = "varchar(100)")]
+        public string Name { get; set; } = null!;
+        [Column(TypeName = "varchar(200)")]
         public string? ImageUrl { get; set; }
         [Required]
         public Boolean IsActive { get; set; }

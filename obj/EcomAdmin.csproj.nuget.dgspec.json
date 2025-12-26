@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\raana\\Downloads\\Ganesh\\ganesh-git\\EcomAdmin\\EcomAdmin.csproj": {}
+    "C:\\Users\\raana\\Downloads\\Ganesh\\ganesh-git\\EcomAdmin-DotNetCore\\EcomAdmin.csproj": {}
   },
   "projects": {
-    "C:\\Users\\raana\\Downloads\\Ganesh\\ganesh-git\\EcomAdmin\\EcomAdmin.csproj": {
+    "C:\\Users\\raana\\Downloads\\Ganesh\\ganesh-git\\EcomAdmin-DotNetCore\\EcomAdmin.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\raana\\Downloads\\Ganesh\\ganesh-git\\EcomAdmin\\EcomAdmin.csproj",
+        "projectUniqueName": "C:\\Users\\raana\\Downloads\\Ganesh\\ganesh-git\\EcomAdmin-DotNetCore\\EcomAdmin.csproj",
         "projectName": "EcomAdmin",
-        "projectPath": "C:\\Users\\raana\\Downloads\\Ganesh\\ganesh-git\\EcomAdmin\\EcomAdmin.csproj",
+        "projectPath": "C:\\Users\\raana\\Downloads\\Ganesh\\ganesh-git\\EcomAdmin-DotNetCore\\EcomAdmin.csproj",
         "packagesPath": "C:\\Users\\raana\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\raana\\Downloads\\Ganesh\\ganesh-git\\EcomAdmin\\obj\\",
+        "outputPath": "C:\\Users\\raana\\Downloads\\Ganesh\\ganesh-git\\EcomAdmin-DotNetCore\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -52,17 +52,21 @@
           "dependencies": {
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[9.0.5, )"
+              "version": "[8.0.16, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[9.0.5, )"
+              "version": "[8.0.16, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[9.0.5, )"
+              "version": "[8.0.16, )"
+            },
+            "System.Runtime": {
+              "target": "Package",
+              "version": "[4.3.1, )"
             }
           },
           "imports": [
